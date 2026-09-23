@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peantora - Premium Peanut Butter</title>
+
+    <link rel="stylesheet" href="style.css">
+  <title>Peantora | Premium Peanut Butter</title>
+
+<meta
+    name="description"
+    content="Discover Peantora premium peanut butter. Creamy, delicious peanut butter made for everyday meals and snacks."
+>
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    property="og:title"
+    content="Peantora | Premium Peanut Butter"
+>
+
+<meta
+    property="og:description"
+    content="Discover Peantora premium peanut butter."
+>
+
+<meta
+    property="og:type"
+    content="website"
+>
+</head>
+<a
+    href="javascript:showCheckout()"
+    class="sticky-whatsapp"
+>
+    💬 Order Peantora
+</a>
+<body>
+
+<header>
+    <div class="logo">PEANTORA</div>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="mainNav">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#product" onclick="closeMenu()">Product</a>
+        <a href="#benefits" onclick="closeMenu()">Benefits</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+</header>
+
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+            PREMIUM PEANUT BUTTER
+        </p>
+
+        <h1>
+            Good Taste.<br>
+            <span>Better Everyday.</span>
+        </h1>
+
+        <p class="hero-description">
+            Discover Peantora — creamy, delicious peanut butter
+            made for your everyday meals and snacks.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#product" class="hero-primary">
+                SHOP NOW
+            </a>
+
+            <a href="#benefits" class="hero-secondary">
+                WHY PEANTORA
+            </a>
+
+        </div>
+
+        <div class="hero-trust">
+
+            <span>🥜 Quality Peanuts</span>
+            <span>✨ Creamy Texture</span>
+            <span>📦 1 kg Jar</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-product">
+
+        <div class="peanut-jar">
+
+            <div class="jar-lid">
+                <div class="lid-highlight"></div>
+            </div>
+
+            <div class="jar-body">
+
+                <div class="jar-shine"></div>
+
+                <div class="jar-label">
+
+                    <div class="brand">
+                        PEANTORA
+                    </div>
+
+                    <div class="subtitle">
+                        PREMIUM PEANUT BUTTER
+                    </div>
+
+                    <div class="creamy">
+                        CREAMY
+                    </div>
+
+                    <div class="peanut-text">
+                        PEANUT BUTTER
+                    </div>
+
+                    <div class="label-bottom">
+                        1 KG • PREMIUM QUALITY
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="peanut peanut-1">🥜</div>
+            <div class="peanut peanut-2">🥜</div>
+            <div class="peanut peanut-3">🥜</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="product" class="product">
+
+    <p class="section-tag">OUR BESTSELLER</p>
+
+    <h2>Peantora Peanut Butter</h2>
+
+    <div class="product-card">
+
+        <div class="product-visual">
+            <div class="mini-jar">
+                <div class="mini-lid"></div>
+                <div class="mini-body">
+                    <div class="mini-label">
+                        <strong>PEANTORA</strong>
+                        <small>PEANUT BUTTER</small>
+                        <span>CREAMY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-info">
+
+            <h3>Premium Peanut Butter</h3>
+
+            <p class="product-description">
+                Creamy and delicious peanut butter made for
+                everyday nutrition and great taste.
+            </p>
+
+            <div class="product-features">
+                <span>🥜 Quality Peanuts</span>
+                <span>💪 Protein Rich</span>
+                <span>❤️ Made With Care</span>
+            </div>
+
+            <div class="price">
+                ₹350
+                <small>/ 1 kg</small>
+            </div>
+
+            <div class="quantity-box">
+
+                <button onclick="changeQuantity(-1)">
+                    −
+                </button>
+
+                <span id="quantity">1</span>
+
+                <button onclick="changeQuantity(1)">
+                    +
+                </button>
+
+            </div>
+
+            <div class="total">
+                Total: ₹<span id="totalPrice">350</span>
+            </div>
+
+            <button class="buy-button" onclick="showCheckout()">
+    ORDER NOW
+</button>
+
+        </div>
+<section id="checkout" class="checkout">
+
+    <p class="section-tag">CHECKOUT</p>
+
+    <h2>Complete Your Order</h2>
+
+    <div class="checkout-card">
+
+        <label>Your Name</label>
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your name"
+        >
+
+        <label>WhatsApp Number</label>
+        <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Enter your WhatsApp number"
+        >
+
+        <label>Delivery Address</label>
+        <textarea
+            id="customerAddress"
+            placeholder="Enter your complete delivery address"
+            rows="4"
+        ></textarea>
+
+        <div class="checkout-summary">
+            <span>Quantity</span>
+            <strong>
+                <span id="checkoutQuantity">1</span> kg
+            </strong>
+        </div>
+
+        <div class="checkout-summary">
+            <span>Total</span>
+            <strong>₹<span id="checkoutTotal">350</span></strong>
+        </div>
+
+        <button
+            class="whatsapp-button"
+            onclick="sendOrder()"
+        >
+            💬 CONFIRM ORDER ON WHATSAPP
+        </button>
+
+    </div>
+
+</section>
+    </div>
+<section id="benefits" class="benefits">
+
+    <p class="section-tag">WHY PEANTORA</p>
+
+    <h2>Simple Ingredients. Great Taste.</h2>
+
+    <p class="benefits-intro">
+        Peantora is made for people who want delicious peanut butter
+        as part of their everyday lifestyle.
+    </p>
+
+    <div class="benefit-grid">
+
+        <div class="benefit-card">
+            <div class="benefit-icon">🥜</div>
+            <h3>Quality Peanuts</h3>
+            <p>
+                Made using carefully selected peanuts for a rich,
+                nutty taste.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">✨</div>
+            <h3>Creamy Texture</h3>
+            <p>
+                Smooth and creamy peanut butter that's easy to enjoy
+                every day.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">❤️</div>
+            <h3>Made With Care</h3>
+            <p>
+                We focus on quality and consistency in every jar
+                of Peantora.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">💪</div>
+            <h3>Everyday Nutrition</h3>
+            <p>
+                A convenient addition to breakfast, snacks and
+                everyday meals.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+    <h2>Our Product</h2>
+
+    <div class="product-card">
+
+
+        <div>
+
+            <h3>Peantora Peanut Butter</h3>
+
+            <p>
+                Premium peanut butter made from quality roasted peanuts.
+            </p>
+
+            <ul>
+                <li>100% Peanut Goodness</li>
+                <li>Protein Rich</li>
+                <li>No Artificial Flavours</li>
+                <li>Perfect for Fitness & Everyday Life</li>
+            </ul>
+
+            <h2>₹350</h2>
+
+            <button onclick="orderProduct()">
+                BUY NOW
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="benefits" class="benefits">
+
+    <h2>Why Peantora?</h2>
+
+    <div class="benefit-container">
+
+        <div class="benefit">
+            <div>🥜</div>
+            <h3>Quality Peanuts</h3>
+            <p>Made using carefully selected peanuts.</p>
+        </div>
+
+        <div class="benefit">
+            <div>💪</div>
+            <h3>Protein</h3>
+            <p>A delicious addition to your daily nutrition.</p>
+        </div>
+
+        <div class="benefit">
+            <div>❤️</div>
+            <h3>Made With Care</h3>
+            <p>Created for people who love great taste.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about">
+
+    <h2>About Peantora</h2>
+
+    <p>
+        Peantora is a peanut butter brand created to bring
+        delicious peanut goodness to everyday life.
+    </p>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+    <p class="section-tag">READY TO ORDER?</p>
+
+    <h2>Get Your Peantora Today</h2>
+
+    <p class="contact-text">
+        Have a question or want to place an order?
+        Contact us directly on WhatsApp.
+    </p>
+
+    <div class="contact-card">
+
+        <div class="contact-icon">🥜</div>
+
+        <h3>Order Directly on WhatsApp</h3>
+
+        <p>
+            Choose your quantity and send your order request.
+            We'll confirm the details with you.
+        </p>
+
+        <button class="whatsapp-button" onclick="orderProduct()">
+            💬 ORDER ON WHATSAPP
+        </button>
+
+        <p class="response-time">
+            Usually respond as soon as possible
+        </p>
+
+    </div>
+
+</section>
+
+  <section class="faq">
+
+    <p class="section-tag">FAQ</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+
+        <details class="faq-item">
+            <summary>What size is the Peantora jar?</summary>
+            <p>
+                Our featured product is a 1 kg jar of Peantora
+                Peanut Butter.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>How much does it cost?</summary>
+            <p>
+                The current listed price is ₹350 for 1 kg.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>How can I place an order?</summary>
+            <p>
+                Select your quantity and click the
+                “Order on WhatsApp” button. We'll confirm your
+                order details directly with you.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>How should I store peanut butter?</summary>
+            <p>
+                Store the product according to the storage
+                instructions printed on the product label.
+            </p>
+        </details>
+
+    </div>
+
+  </section>
+
+
+<footer>
+
+    <h3>PEANTORA</h3>
+
+    <p>Premium Peanut Butter</p>
+
+    <p>© 2026 Peantora. All Rights Reserved.</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <div class="footer-logo">PEANTORA</div>
+
+            <p>
+                Premium peanut butter made for everyday
+                taste and enjoyment.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#product">Product</a>
+            <a href="#benefits">Why Peantora</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-order">
+
+            <h3>Order</h3>
+
+            <p>
+                Want to order Peantora?
+            </p>
+
+            <button onclick="orderProduct()">
+                💬 WhatsApp Us
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Peantora. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
